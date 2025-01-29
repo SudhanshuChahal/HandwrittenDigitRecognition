@@ -1,0 +1,7 @@
+python 3.10-64
+tensorflow
+matplotlib
+numpy
+pandas
+scikit-learn
+
