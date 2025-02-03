@@ -2,7 +2,7 @@ from tensorflow import keras
 import numpy as np
 
 
-def predict_digit(image_path='../image/digit3.webp'):
+def predict_digit(image_path):
     #Load trained model
     model = keras.models.load_model('../models/model.keras')
 
@@ -18,8 +18,3 @@ def predict_digit(image_path='../image/digit3.webp'):
     # predcit , return the digit 
     prediction = model.predict(img_array)
     return np.argmax(prediction)
-
-
-if __name__ == '__main__':
-    pr =predict_digit()
-    print("predicted digit is: ",pr)
